@@ -1,6 +1,6 @@
 # Fake News Detection using Logistic Regression + TF-IDF
 
-This is an introductory machine learning project designed to classify news articles as real or fake. It serves as a first project to explore the end-to-end process of model training and deployment via a web interface.
+This is an introductory machine learning project designed to classify news articles as real or fake. It serves as a first project to explore the end-to-end process of model training, evaluation, and integration into a web application.
 
 ## Table of Contents
 1. [Model Development](#1-model-development)
@@ -51,12 +51,13 @@ After hyperparameter tuning, the best model achieved the following results on th
 
 ## 2. Web Application
 
-This section handles the deployment of the model into a functional web interface for real-time predictions.
+This section focuses on integrating the trained machine learning model with a local web application, enabling users to classify news articles through an interactive interface.
 
 ### Features
 - **FastAPI Backend**: A Python API for model inference.
 - **Interactive UI**: A simple web interface with loading states.
 - **Text Preprocessing**: NLTK-based cleaning (lemmatization and stopword removal).
+- **Real Time Predictions**: Returns the predicted label (Real/Fake) along with a confidence score.
 
 ### Tech Stack
 - **Backend**: Python (FastAPI, Scikit-Learn, Joblib, NLTK)
